@@ -1,0 +1,68 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: grid;
+    height: 100%;
+}
+
+#wrapper.final {
+    grid-template-rows: 3fr 1fr;
+}
+
+#minimapWrapper {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 400px;
+    width: 600px;
+    z-index: 1;
+}
+
+#minimap:hover {
+    opacity: 1;
+}
+
+#minimap {
+    height: 350px;
+    opacity: 0.5;
+}
+
+#submit-button:disabled {
+    display: none;
+}
+
+.button:hover {
+    background: #94cb44;
+}
+
+.button {
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+    margin: 10px 0;
+    height: 40px;
+    line-height: 40px;
+    bottom: 0;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 15;
+    overflow: hidden;
+    padding: 0 30px;
+    background: #7fb432;
+    color: #fff;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    font-size: 16px;
+    width: 100%;
+}
+
+#results {
+    align-self: center;
+    justify-self: center;
+}

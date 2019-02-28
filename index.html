@@ -1,0 +1,21 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div id="wrapper">
+    <div id="street-view"></div>
+    <div id="minimapWrapper">
+        <div id="minimap"></div>
+        <button id='submit-button' class="button" disabled>Guess</button>
+    </div>
+    <div id="results" style="display: none">
+        <div>Distance: <span id="distance"></span> km</div>
+        <button class="button" id="next-button">Next</button>
+    </div>
+</div>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initialize"></script>
+<script type="text/javascript" src="js.js"></script>
+</body>
+</html>
